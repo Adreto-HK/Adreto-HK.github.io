@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Riwa-Riwi Semarang</title>
+    <link rel="shortcut icon" href="gambar/Open Peeps - Avatar.png" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-dark ">
+        <a class="navbar-brand" href="#">
+            <img src="gambar/logomoses.png" width="100" height="50" alt="">
+          </a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+
+    <div class="bg">
+          <h1 class="overlay d-flex justify-content-center align-items-center">Riwa-Riwi<br>Semarang</h1>
+          </div>
+          <tbody>
+
+          <div class="row container m-auto">
+            <div class="col-md-4">
+          <div class="card justify-content-start" style="width: 18rem;">
+            <img src="gambar/lawang-sewu.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <tr>
+              <h5 class="card-title">Lawang Sewu</h5>
+              <p class="card-text"> Lawang Sewu (bahasa Belanda: Het administratiegebouw van de Nederlandsch-Indische Spoorweg-Maatschappij, N.V. te Samarang)</p>
+              <a href="lawangsewu.html" class="btn btn-primary">Lihat</a>
+              </tr>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+          <div class="card justify-content-center" style="width: 18rem;">
+            <img src="gambar/sampookong.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sam Poo Kong</h5>
+              <p class="card-text">Kelenteng Sam Poo Kong di Kota Semarang bukan sekadar tempat ibadah semata. Kelenteng ini juga menjadi tempat wisata ikonik yang</p>
+              <a href="sampookong.html" class="btn btn-primary">Lihat</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+          <div class="card justify-content-end" style="width: 18rem;">
+            <img src="gambar/candigedongsongo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Candi Gedong Songo</h5>
+              <p class="card-text">Candi Gedong Songo adalah nama sebuah kompleks bangunan candi peninggalan budaya Hindu yang terletak di desa Candi</p>
+              <a href="candigedongsongo.html" class="btn btn-primary">Lihat</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card justify-content-start" style="width: 18rem;">
+          <img src="gambar/kotalama.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kota Lama</h5>
+            <p class="card-text">Kota Lama adalah suatu kawasan di Semarang yang menjadi pusat perdagangan pada abad 19-20 . Pada masa itu</p>
+            <a href="kotalama.html" class="btn btn-primary">Lihat</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card justify-content-center" style="width: 18rem;">
+          <img src="gambar/kampungpelangi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kampung Pelangi</h5>
+            <p class="card-text">Letak Kampung Pelangi ini ada di belakang Pasar Kembang Kalisari, Semarang. Sebelum diwarnai, kampung pinggir sungai ini</p>
+            <a href="kampungpelangi.html" class="btn btn-primary">Lihat</a>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card justify-content-end" style="width: 18rem;">
+        <img src="gambar/museumrekordi.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Museum Rekor Dunia Indonesia</h5>
+          <p class="card-text">Museum Rekor-Dunia Indonesia atau MURDI adalah sebuah museum</p>
+          <a href="museumrekordi.html" class="btn btn-primary">Lihat</a>
+        </div>
+      </div>
+      </div>
+      </div>
+          </tbody>
+          
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+    $("input").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("div .card").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+     });
+ });
+    </script>
+  </body>
+  <!-- Footer -->
+<footer class="page-footer font-small info">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="https://www.instagram.com/adretoo/"> Mostech</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
